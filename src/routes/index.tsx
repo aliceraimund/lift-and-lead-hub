@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  Truck, BadgeDollarSign, Handshake, Zap, ShieldCheck, Clock, Sparkles,
+  Truck, Forklift, BadgeDollarSign, Handshake, Zap, ShieldCheck, Clock, Sparkles,
   Phone, MapPin, Mail, MessageCircle, ChevronDown, CheckCircle2, FileText,
 } from "lucide-react";
 import { Header } from "@/components/Header";
@@ -16,9 +16,9 @@ import combustionImg from "@/assets/images/forklift-combustion-toyota.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DJ Rent — Aluguel e Venda de Empilhadeiras em São Paulo" },
+      { title: "DJ Rent: Aluguel e Venda de Empilhadeiras em São Paulo" },
       { name: "description", content: "Locação, compra e venda de empilhadeiras elétricas e à combustão. Atuação no estado de São Paulo com foco na região metropolitana. Solicite orçamento via WhatsApp." },
-      { property: "og:title", content: "DJ Rent — Empilhadeiras para Aluguel e Venda" },
+      { property: "og:title", content: "DJ Rent: Empilhadeiras para Aluguel e Venda" },
       { property: "og:description", content: "Soluções de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos." },
     ],
   }),
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const faqs = [
-  { q: "Qual é o prazo mínimo de aluguel?", a: "Oferecemos total flexibilidade em períodos de locação. Você pode alugar por dias, semanas, meses ou períodos customizados conforme sua necessidade operacional. Não temos prazo mínimo rígido — adequamos a solução ao seu cronograma." },
+  { q: "Qual é o prazo mínimo de aluguel?", a: "Oferecemos total flexibilidade em períodos de locação. Você pode alugar por dias, semanas, meses ou períodos customizados conforme sua necessidade operacional. Não temos prazo mínimo rígido; adequamos a solução ao seu cronograma." },
   { q: "Vocês oferecem empilhadeiras elétricas e à combustão?", a: "Sim, oferecemos ambas as opções. As elétricas são ideais para ambientes internos com maior preocupação ambiental; as à combustão oferecem maior potência para operações pesadas e ambientes externos. Avaliamos sua operação e recomendamos o melhor equipamento." },
   { q: "Como funciona o processo de aluguel?", a: "É simples: entre em contato informando suas necessidades (tipo de carga, altura de elevação, período). Nossa equipe avalia o melhor equipamento e elabora uma proposta detalhada. Após aprovação, realizamos a entrega rápida com toda a documentação." },
   { q: "Como funciona o processo de compra?", a: "Entre em contato informando suas necessidades e preferências. Nosso time avaliará o melhor equipamento para sua operação e apresentará opções de máquinas novas e usadas. Negociamos os melhores termos e finalizamos toda a documentação." },
@@ -100,8 +100,8 @@ function Hero() {
 
 function About() {
   const items = [
-    { icon: Truck, title: "Frota Moderna e Diversificada", desc: "Empilhadeiras elétricas e à combustão para cada necessidade." },
-    { icon: Zap, title: "Soluções Flexíveis e Rápidas", desc: "Contratos sob medida — diários, semanais ou mensais." },
+    { icon: Forklift, title: "Frota Moderna e Diversificada", desc: "Empilhadeiras elétricas e à combustão para cada necessidade." },
+    { icon: Zap, title: "Soluções Flexíveis e Rápidas", desc: "Contratos sob medida: diários, semanais ou mensais." },
     { icon: BadgeDollarSign, title: "Preços Competitivos", desc: "Os melhores preços do estado de São Paulo." },
   ];
   return (
@@ -323,7 +323,7 @@ function Contact() {
     e.preventDefault();
     if (!form.nome.trim() || !form.email.trim() || !form.telefone.trim()) return;
     if (form.whats) {
-      const msg = `Olá DJ Rent! Sou ${form.nome} (${form.empresa || "—"}). Assunto: ${form.assunto}. ${form.mensagem}`;
+      const msg = `Olá DJ Rent! Sou ${form.nome} (${form.empresa || "sem empresa"}). Assunto: ${form.assunto}. ${form.mensagem}`;
       window.open(whatsappUrl(msg), "_blank");
     }
     setSent(true);
@@ -391,7 +391,7 @@ function Contact() {
         <div>
           <h3 className="text-xl font-bold">Fale com a DJ Rent</h3>
           <div className="mt-6 space-y-5">
-            <InfoRow icon={MapPin} title="Endereço">Alameda Terracota, 215, Torre Union, Sala 802<br />São Caetano do Sul, SP — CEP 09531-190</InfoRow>
+            <InfoRow icon={MapPin} title="Endereço">Alameda Terracota, 215, Torre Union, Sala 802<br />São Caetano do Sul, SP, CEP 09531-190</InfoRow>
             <InfoRow icon={Phone} title="Telefone">{PHONE_DISPLAY}</InfoRow>
             <InfoRow icon={MessageCircle} title="WhatsApp">
               {WHATSAPP_DISPLAY}

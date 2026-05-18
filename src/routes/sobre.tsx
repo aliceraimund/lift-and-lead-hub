@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Target, Eye, Gem, Handshake, Zap, ShieldCheck, RefreshCw, Truck, BadgeDollarSign, CheckCircle2, MessageCircle, Leaf } from "lucide-react";
+import { Target, Eye, Gem, Handshake, Zap, ShieldCheck, RefreshCw, Truck, Forklift, BadgeDollarSign, CheckCircle2, MessageCircle, Leaf } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -9,8 +9,8 @@ import fleetImg from "@/assets/about-fleet.jpg";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre Nós — DJ Rent" },
-      { name: "description", content: "Conheça a história da DJ Rent — mais de 10 anos em locação, compra e venda de empilhadeiras com atuação em todo o estado de São Paulo." },
+      { title: "Sobre Nós | DJ Rent" },
+      { name: "description", content: "Conheça a história da DJ Rent: mais de 10 anos em locação, compra e venda de empilhadeiras com atuação em todo o estado de São Paulo." },
       { property: "og:title", content: "Sobre a DJ Rent" },
       { property: "og:description", content: "Nossa missão, visão, valores e diferenciais no mercado de movimentação de carga." },
     ],
@@ -43,7 +43,7 @@ function SobrePage() {
           <p>A DJ Rent surgiu em 2015 como uma solução inovadora no mercado de movimentação de cargas em São Paulo. Fundada por profissionais com mais de 20 anos de experiência em logística e operações industriais, nasceu da necessidade de oferecer uma alternativa flexível e econômica para empresas que precisavam de equipamentos sem os altos custos de aquisição.</p>
           <p>Nos primeiros anos, operávamos com uma pequena frota de empilhadeiras à combustão, atendendo principalmente pequenas e médias empresas do ABC Paulista. O diferencial desde o início era simples: atendimento rápido, equipamentos bem mantidos e preços justos.</p>
           <p>Com o crescimento da demanda, expandimos nossa frota para incluir também empilhadeiras elétricas, atendendo diversos segmentos de mercado e ambientes operacionais em todo o estado de São Paulo.</p>
-          <p>Nossa trajetória é marcada pelo compromisso com qualidade, confiabilidade e inovação. Cada cliente é atendido com excelência, e cada máquina é selecionada e mantida com rigor — garantindo segurança e eficiência nas operações.</p>
+          <p>Nossa trajetória é marcada pelo compromisso com qualidade, confiabilidade e inovação. Cada cliente é atendido com excelência, e cada máquina é selecionada e mantida com rigor, garantindo segurança e eficiência nas operações.</p>
           <p className="font-semibold text-foreground">A DJ Rent não é apenas uma empresa de locação e venda. Somos parceiros dos seus projetos, crescendo junto com você.</p>
         </div>
       </section>
@@ -78,11 +78,11 @@ function SobrePage() {
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {[
-            { icon: Truck, title: "Frota Moderna e Diversificada", d: "Elétricas e à combustão para qualquer necessidade operacional." },
+            { icon: Forklift, title: "Frota Moderna e Diversificada", d: "Elétricas e à combustão para qualquer necessidade operacional." },
             { icon: Leaf, title: "Compromisso Sustentável", d: "Empilhadeiras elétricas para operações mais limpas e responsáveis." },
             { icon: ShieldCheck, title: "Equipamentos Testados", d: "Cada máquina é inspecionada com rigor antes da entrega." },
             { icon: Handshake, title: "Atendimento com Excelência", d: "Equipe especializada focada na melhor solução para o seu negócio." },
-            { icon: RefreshCw, title: "Flexibilidade Contratual", d: "Dia, semana, mês ou customizado — adaptamos ao seu cronograma." },
+            { icon: RefreshCw, title: "Flexibilidade Contratual", d: "Dia, semana, mês ou customizado; adaptamos ao seu cronograma." },
             { icon: BadgeDollarSign, title: "Preços Competitivos", d: "Os melhores valores do estado, com negociação flexível." },
           ].map((d) => (
             <div key={d.title} className="flex gap-4 rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition-colors hover:border-[var(--brand-blue)]">
@@ -129,7 +129,7 @@ function SobrePage() {
               },
               {
                 title: "Responsabilidade que se traduz em resultados",
-                desc: "Escolher equipamentos sustentáveis hoje é garantir um futuro operacional mais responsável amanhã — para sua empresa, seus colaboradores e o meio ambiente.",
+                desc: "Escolher equipamentos sustentáveis hoje é garantir um futuro operacional mais responsável amanhã, para sua empresa, seus colaboradores e o meio ambiente.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-green-200 bg-white p-6 shadow-sm">
