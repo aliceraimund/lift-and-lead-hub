@@ -67,10 +67,10 @@ function Hero() {
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>
-        <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl">
+        <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.8)" }}>
           Empilhadeiras para <span className="text-[var(--brand-blue)]">Locação e Venda</span>
         </h1>
-        <p className="max-w-2xl text-lg text-white/85 md:text-xl">
+        <p className="max-w-2xl text-lg text-white/85 md:text-xl" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}>
           Soluções completas de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos.
         </p>
         <div className="flex flex-wrap items-center gap-3">
