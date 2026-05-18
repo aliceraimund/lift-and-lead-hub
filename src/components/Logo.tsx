@@ -7,7 +7,7 @@ export function Logo({ light = false, large = false }: { light?: boolean; large?
     <img
       src={light ? logoFooter : logoHeader}
       alt="DJ Rent"
-      className={`w-auto object-contain ${large ? "h-36 md:h-44" : "h-10"}`}
+      className={`w-auto object-contain ${large ? "h-36 md:h-44" : "h-14 md:h-16"}`}
     />
   );
 }
