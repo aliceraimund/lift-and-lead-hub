@@ -9,9 +9,9 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { LogoSymbol } from "@/components/Logo";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
-import heroImg from "@/assets/hero-forklift.jpg";
-import electricImg from "@/assets/forklift-electric.jpg";
-import combustionImg from "@/assets/forklift-combustion.jpg";
+import heroImg from "@/assets/images/hero-bg.png";
+import electricImg from "@/assets/images/forklift-electric-toyota.png";
+import combustionImg from "@/assets/images/forklift-combustion-toyota.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -56,14 +56,14 @@ function Hero() {
     <section className="relative isolate overflow-hidden">
       <img
         src={heroImg}
-        alt="Empilhadeira elétrica movimentando carga em armazém moderno"
+        alt="Empilhadeira Toyota em operação"
         width={1920}
         height={1280}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-[#003D82]/60 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/50 to-black/65" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
-        <LogoSymbol className="h-14 w-14" />
+        <LogoSymbol className="h-28 w-auto md:h-36" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>

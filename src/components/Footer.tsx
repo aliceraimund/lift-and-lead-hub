@@ -7,8 +7,8 @@ export function Footer() {
     <footer className="border-t border-border bg-[#1A1A1A] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4 md:px-8">
         <div>
-          <Logo light />
-          <p className="mt-4 text-sm text-white/60">
+          <Logo light large />
+          <p className="mt-5 text-sm text-white/60">
             Locação, compra e venda de empilhadeiras.
           </p>
         </div>

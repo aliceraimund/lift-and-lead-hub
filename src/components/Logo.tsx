@@ -2,12 +2,12 @@ import logoHeader from "@/assets/logos/logo-header.png";
 import logoFooter from "@/assets/logos/logo-footer.png";
 import logoSymbol from "@/assets/logos/logo-symbol.png";
 
-export function Logo({ light = false }: { light?: boolean }) {
+export function Logo({ light = false, large = false }: { light?: boolean; large?: boolean }) {
   return (
     <img
       src={light ? logoFooter : logoHeader}
       alt="DJ Rent"
-      className="h-10 w-auto object-contain"
+      className={`w-auto object-contain ${large ? "h-36 md:h-44" : "h-10"}`}
     />
   );
 }
