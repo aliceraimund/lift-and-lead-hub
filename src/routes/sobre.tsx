@@ -38,7 +38,7 @@ function SobrePage() {
       {/* Story */}
       <section className="mx-auto max-w-4xl px-4 py-20 md:px-8 md:py-24">
         <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Nossa História</p>
-        <h2 className="mt-3 text-3xl md:text-4xl">Nossa Jornada</h2>
+        <h2 className="mt-3 text-3xl md:text-4xl">Crescimento e Confiança</h2>
         <div className="mt-6 space-y-5 leading-relaxed text-[var(--brand-graphite)]">
           <p>A DJ Rent surgiu em 2015 como uma solução inovadora no mercado de movimentação de cargas em São Paulo. Fundada por profissionais com mais de 20 anos de experiência em logística e operações industriais, nasceu da necessidade de oferecer uma alternativa flexível e econômica para empresas que precisavam de equipamentos sem os altos custos de aquisição.</p>
           <p>Nos primeiros anos, operávamos com uma pequena frota de empilhadeiras à combustão, atendendo principalmente pequenas e médias empresas do ABC Paulista. O diferencial desde o início era simples: atendimento rápido, equipamentos bem mantidos e preços justos.</p>
