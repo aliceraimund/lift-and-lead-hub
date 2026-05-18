@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <Logo light />
           <p className="mt-4 text-sm text-white/60">
-            Soluções em movimentação de carga. Aluguel e venda de empilhadeiras na grande São Paulo.
+            Locação, compra e venda de empilhadeiras.
           </p>
         </div>
         <div>
@@ -36,7 +36,7 @@ export function Footer() {
         <div>
           <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">Endereço</h4>
           <p className="text-sm text-white/80">
-            Alameda Terracota, 215, Torre Union<br />São Caetano do Sul, SP<br />CEP 09531-190
+            Alameda Terracota, 215, Torre Union, Sala 802<br />São Caetano do Sul, SP<br />CEP 09531-190
           </p>
         </div>
       </div>

@@ -1,12 +1,24 @@
+import logoHeader from "@/assets/logos/logo-header.png";
+import logoFooter from "@/assets/logos/logo-footer.png";
+import logoSymbol from "@/assets/logos/logo-symbol.png";
+
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-[var(--brand-blue)] text-white font-bold text-lg shadow-[var(--shadow-cta)]">
-        D
-      </span>
-      <span className={`text-2xl font-bold tracking-tight ${light ? "text-white" : "text-foreground"}`}>
-        <span className="text-[var(--brand-blue)]">j</span>rent
-      </span>
-    </div>
+    <img
+      src={light ? logoFooter : logoHeader}
+      alt="DJ Rent"
+      className="h-10 w-auto object-contain"
+    />
+  );
+}
+
+export function LogoSymbol({ className = "" }: { className?: string }) {
+  return (
+    <img
+      src={logoSymbol}
+      alt=""
+      aria-hidden
+      className={`object-contain ${className}`}
+    />
   );
 }

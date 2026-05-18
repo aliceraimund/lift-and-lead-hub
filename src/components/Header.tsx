@@ -1,12 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { whatsappUrl } from "@/lib/whatsapp";
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const [services, setServices] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/85 backdrop-blur-md">
@@ -16,33 +15,12 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <div
-            className="relative"
-            onMouseEnter={() => setServices(true)}
-            onMouseLeave={() => setServices(false)}
-          >
-            <button className="flex items-center gap-1 text-sm font-medium text-foreground hover:text-[var(--brand-blue)]">
-              Serviços <ChevronDown className="h-4 w-4" />
-            </button>
-            {services && (
-              <div className="absolute left-0 top-full w-52 rounded-lg border border-border bg-card p-2 shadow-[var(--shadow-card)]">
-                <Link
-                  to="/"
-                  hash="servicos"
-                  className="block rounded-md px-3 py-2 text-sm text-foreground hover:bg-secondary"
-                >
-                  Aluguel de Empilhadeiras
-                </Link>
-                <Link
-                  to="/"
-                  hash="servicos"
-                  className="block rounded-md px-3 py-2 text-sm text-foreground hover:bg-secondary"
-                >
-                  Compra e Venda
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link to="/" className="text-sm font-medium text-foreground hover:text-[var(--brand-blue)]">
+            Home
+          </Link>
+          <Link to="/" hash="servicos" className="text-sm font-medium text-foreground hover:text-[var(--brand-blue)]">
+            Serviços
+          </Link>
           <Link to="/" hash="contato" className="text-sm font-medium text-foreground hover:text-[var(--brand-blue)]">
             Contato
           </Link>
@@ -71,11 +49,11 @@ export function Header() {
       {open && (
         <div className="border-t border-border bg-background md:hidden">
           <div className="flex flex-col gap-1 p-4">
-            <Link to="/" hash="servicos" onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-sm font-medium">
-              Aluguel de Empilhadeiras
+            <Link to="/" onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-sm font-medium">
+              Home
             </Link>
             <Link to="/" hash="servicos" onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-sm font-medium">
-              Compra e Venda
+              Serviços
             </Link>
             <Link to="/" hash="contato" onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-sm font-medium">
               Contato

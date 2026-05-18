@@ -7,6 +7,7 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { LogoSymbol } from "@/components/Logo";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
 import heroImg from "@/assets/hero-forklift.jpg";
 import electricImg from "@/assets/forklift-electric.jpg";
@@ -16,7 +17,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "DJ Rent — Aluguel e Venda de Empilhadeiras em São Paulo" },
-      { name: "description", content: "Aluguel e venda de empilhadeiras elétricas e à combustão. Mais de 10 anos atendendo a região metropolitana de São Paulo. Solicite orçamento via WhatsApp." },
+      { name: "description", content: "Locação, compra e venda de empilhadeiras elétricas e à combustão. Atuação no estado de São Paulo com foco na região metropolitana. Solicite orçamento via WhatsApp." },
       { property: "og:title", content: "DJ Rent — Empilhadeiras para Aluguel e Venda" },
       { property: "og:description", content: "Soluções de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos." },
     ],
@@ -28,11 +29,8 @@ const faqs = [
   { q: "Qual é o prazo mínimo de aluguel?", a: "Oferecemos total flexibilidade em períodos de locação. Você pode alugar por dias, semanas, meses ou períodos customizados conforme sua necessidade operacional. Não temos prazo mínimo rígido — adequamos a solução ao seu cronograma." },
   { q: "Vocês oferecem empilhadeiras elétricas e à combustão?", a: "Sim, oferecemos ambas as opções. As elétricas são ideais para ambientes internos com maior preocupação ambiental; as à combustão oferecem maior potência para operações pesadas e ambientes externos. Avaliamos sua operação e recomendamos o melhor equipamento." },
   { q: "Como funciona o processo de aluguel?", a: "É simples: entre em contato informando suas necessidades (tipo de carga, altura de elevação, período). Nossa equipe avalia o melhor equipamento e elabora uma proposta detalhada. Após aprovação, realizamos a entrega rápida com toda a documentação." },
-  { q: "Como funciona o processo de compra?", a: "Consulte nosso catálogo de equipamentos disponíveis (novos e usados). Avaliamos com você as condições técnicas e operacionais de cada máquina, negociamos termos de pagamento e finalizamos com toda a assistência técnica necessária." },
+  { q: "Como funciona o processo de compra?", a: "Entre em contato informando suas necessidades e preferências. Nosso time avaliará o melhor equipamento para sua operação e apresentará opções de máquinas novas e usadas. Negociamos os melhores termos e finalizamos toda a documentação." },
   { q: "Qual é o horário de atendimento?", a: "Segunda a sexta-feira, das 8h às 18h. Fora desse horário, deixe sua mensagem no WhatsApp ou email que respondemos assim que possível." },
-  { q: "Quais são as formas de pagamento?", a: "Aceitamos transferência bancária, boleto, pix e analisamos propostas de parcelamento. Entre em contato informando suas preferências." },
-  { q: "Posso alugar por um dia apenas?", a: "Sim! Oferecemos aluguel por período de um dia com ótimas condições, ideal para demandas pontuais e operações sazonais. Descontos para períodos estendidos." },
-  { q: "Como são entregues os equipamentos?", a: "Realizamos entrega rápida em toda a região metropolitana de São Paulo, com inspeção técnica completa, documentação em dia e orientações de operação. Coleta inclusa ao final do aluguel." },
 ];
 
 function Home() {
@@ -65,11 +63,12 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-[#003D82]/60 to-black/70" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
+        <LogoSymbol className="h-14 w-14" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl">
-          Empilhadeiras para <span className="text-[var(--brand-blue)]">Aluguel e Venda</span>
+          Empilhadeiras para <span className="text-[var(--brand-blue)]">Locação e Venda</span>
         </h1>
         <p className="max-w-2xl text-lg text-white/85 md:text-xl">
           Soluções completas de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos.
@@ -103,7 +102,7 @@ function About() {
   const items = [
     { icon: Truck, title: "Frota Moderna e Diversificada", desc: "Empilhadeiras elétricas e à combustão para cada necessidade." },
     { icon: Zap, title: "Soluções Flexíveis e Rápidas", desc: "Contratos sob medida — diários, semanais ou mensais." },
-    { icon: BadgeDollarSign, title: "Preços Competitivos", desc: "Os melhores preços da região metropolitana de São Paulo." },
+    { icon: BadgeDollarSign, title: "Preços Competitivos", desc: "Os melhores preços do estado de São Paulo." },
   ];
   return (
     <section id="sobre" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
@@ -111,7 +110,7 @@ function About() {
         <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Quem Somos</p>
         <h2 className="mt-3 text-3xl md:text-4xl">Sua parceira em movimentação de carga</h2>
         <p className="mt-4 text-base leading-relaxed text-[var(--brand-steel)]">
-          A DJ Rent é sua parceira confiável em soluções de movimentação. Com mais de 10 anos de experiência, oferecemos aluguel e venda de empilhadeiras elétricas e à combustão para empresas de todos os tamanhos na região metropolitana de São Paulo.
+          A DJ Rent é sua parceira confiável em soluções de movimentação. Com mais de 10 anos de experiência, oferecemos locação, compra e venda de empilhadeiras elétricas e à combustão para empresas de todos os tamanhos, com atuação no estado de São Paulo e foco na região metropolitana.
         </p>
       </div>
       <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -193,16 +192,16 @@ function Services() {
 
 function WhyChoose() {
   const items = [
-    { icon: Truck, title: "Entrega Rápida", desc: "Levamos até você em até 24 horas." },
-    { icon: BadgeDollarSign, title: "Preços Competitivos", desc: "Os melhores da região metropolitana." },
+    { icon: Truck, title: "Entrega Rápida", desc: "Logística ágil para sua operação não parar." },
+    { icon: BadgeDollarSign, title: "Preços Competitivos", desc: "Os melhores da região." },
     { icon: Handshake, title: "Confiança e Experiência", desc: "Mais de 10 anos no mercado, com relacionamento duradouro." },
     { icon: Zap, title: "Diversidade de Equipamentos", desc: "Elétricas e à combustão para todo tipo de operação." },
   ];
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Por que escolher</p>
-        <h2 className="mt-3 text-3xl md:text-4xl">4 razões para confiar em nós</h2>
+        <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Por que escolher a DJ Rent?</p>
+        <h2 className="mt-3 text-3xl md:text-4xl">Razões para confiar em nós</h2>
       </div>
       <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {items.map((it, i) => (
@@ -302,7 +301,7 @@ function FinalCTA() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,132,217,0.4),transparent_60%)]" />
       <div className="relative mx-auto max-w-4xl px-4 text-center md:px-8">
         <h2 className="text-3xl font-bold text-white md:text-5xl">Pronto para aumentar sua produtividade?</h2>
-        <p className="mt-4 text-white/80">Resposta em até 2 horas no horário comercial.</p>
+        <p className="mt-4 text-white/80">Resposta rápida. Fale com nosso time agora.</p>
         <a
           href={whatsappUrl("Olá DJ Rent! Quero solicitar um orçamento.")}
           target="_blank"
@@ -317,7 +316,7 @@ function FinalCTA() {
 }
 
 function Contact() {
-  const [form, setForm] = useState({ nome: "", email: "", telefone: "", empresa: "", assunto: "Aluguel", mensagem: "", whats: false });
+  const [form, setForm] = useState({ nome: "", email: "", telefone: "", empresa: "", ramo: "", assunto: "Aluguel", mensagem: "", whats: false });
   const [sent, setSent] = useState(false);
 
   function submit(e: React.FormEvent) {
@@ -351,6 +350,7 @@ function Contact() {
                 <Field label="Email*" type="email" value={form.email} onChange={(v) => setForm({ ...form, email: v })} required />
                 <Field label="Telefone*" value={form.telefone} onChange={(v) => setForm({ ...form, telefone: v })} required />
                 <Field label="Empresa" value={form.empresa} onChange={(v) => setForm({ ...form, empresa: v })} />
+                <Field label="Ramo de atuação" value={form.ramo} onChange={(v) => setForm({ ...form, ramo: v })} />
               </div>
               <div>
                 <label className="text-sm font-medium text-foreground">Assunto</label>
@@ -391,7 +391,7 @@ function Contact() {
         <div>
           <h3 className="text-xl font-bold">Fale com a DJ Rent</h3>
           <div className="mt-6 space-y-5">
-            <InfoRow icon={MapPin} title="Endereço">Alameda Terracota, 215, Torre Union<br />São Caetano do Sul, SP — CEP 09531-190</InfoRow>
+            <InfoRow icon={MapPin} title="Endereço">Alameda Terracota, 215, Torre Union, Sala 802<br />São Caetano do Sul, SP — CEP 09531-190</InfoRow>
             <InfoRow icon={Phone} title="Telefone">{PHONE_DISPLAY}</InfoRow>
             <InfoRow icon={MessageCircle} title="WhatsApp">
               {WHATSAPP_DISPLAY}
