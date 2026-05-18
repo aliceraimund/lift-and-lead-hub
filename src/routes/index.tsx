@@ -63,7 +63,7 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/50 to-black/65" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
-        <LogoSymbol className="h-20 w-auto md:h-28 self-start" />
+        <LogoSymbol className="h-20 w-auto md:h-28 self-start object-left -ml-2 md:-ml-4" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>
