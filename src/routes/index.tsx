@@ -61,15 +61,15 @@ function Hero() {
         height={1280}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/40" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
         <LogoSymbol className="h-32 w-auto md:h-44 self-start" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.8)" }}>
-          Empilhadeiras<br />
-          <span className="text-[var(--brand-blue)]">para Locação e Venda</span>
+          Empilhadeiras para<br />
+          <span className="text-[var(--brand-blue)]">Locação e Venda</span>
         </h1>
         <p className="max-w-2xl text-lg text-white/85 md:text-xl" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}>
           Soluções completas de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos.
