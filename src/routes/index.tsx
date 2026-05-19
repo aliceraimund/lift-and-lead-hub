@@ -7,9 +7,9 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { LogoSymbol } from "@/components/Logo";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
 import heroImg from "@/assets/images/hero-bg.png";
+import logoWhite from "@/assets/images/logo-white.png";
 import electricImg from "@/assets/images/forklift-electric-toyota.png";
 import combustionImg from "@/assets/images/forklift-combustion-toyota.png";
 
