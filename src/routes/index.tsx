@@ -8,7 +8,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { LogoSymbol } from "@/components/Logo";
-import heroSymbol from "@/assets/hero-symbol.jpeg";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
 import heroImg from "@/assets/images/hero-bg.png";
 import electricImg from "@/assets/images/forklift-electric-toyota.png";
@@ -62,9 +61,9 @@ function Hero() {
         height={1280}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/50 to-black/65" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
-        <img src={heroSymbol} alt="DJ Rent" className="h-24 w-auto md:h-32 self-start drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]" />
+        <LogoSymbol className="h-32 w-auto md:h-44 self-start" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
           <Sparkles className="h-3.5 w-3.5" /> Mais de 10 anos de experiência
         </span>
