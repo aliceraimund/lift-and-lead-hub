@@ -10,6 +10,7 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
 import heroImg from "@/assets/images/hero-bg.png";
 import logoWhite from "@/assets/images/logo-white.png";
+import djSymbol from "@/assets/images/dj-symbol.png";
 import electricImg from "@/assets/images/forklift-electric-toyota.png";
 import combustionImg from "@/assets/images/forklift-combustion-toyota.png";
 
@@ -333,6 +334,7 @@ function Contact() {
 
   return (
     <section id="contato" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
+      <img src={djSymbol} alt="DJ Rent" className="mx-auto mb-10 h-20 w-auto md:h-24" />
       <div className="grid gap-12 md:grid-cols-2">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Contato</p>
