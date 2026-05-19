@@ -75,13 +75,6 @@ function Hero() {
           Soluções completas de movimentação de carga para sua empresa.<br />
           Frota moderna, entrega rápida e preços competitivos.
         </p>
-        <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.8)" }}>
-          Empilhadeiras para<br />
-          <span className="text-[var(--brand-blue)]">Locação e Venda</span>
-        </h1>
-        <p className="max-w-2xl text-lg text-white/85 md:text-xl" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}>
-          Soluções completas de movimentação de carga para sua empresa. Frota moderna, entrega rápida e preços competitivos.
-        </p>
         <div className="flex flex-wrap items-center gap-3">
           <a
             href={whatsappUrl("Olá DJ Rent! Gostaria de solicitar um orçamento para aluguel/compra de empilhadeiras")}
