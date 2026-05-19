@@ -10,6 +10,7 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { whatsappUrl, WHATSAPP_DISPLAY, PHONE_DISPLAY, EMAIL } from "@/lib/whatsapp";
 import heroImg from "@/assets/images/hero-bg.png";
 import logoWhite from "@/assets/images/logo-white.png";
+import djSymbol from "@/assets/images/dj-symbol.png";
 import electricImg from "@/assets/images/forklift-electric-toyota.png";
 import combustionImg from "@/assets/images/forklift-combustion-toyota.png";
 
