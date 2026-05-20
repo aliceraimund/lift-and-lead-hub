@@ -319,16 +319,23 @@ function FinalCTA() {
 }
 
 function Contact() {
-  const [form, setForm] = useState({ nome: "", email: "", telefone: "", empresa: "", ramo: "", assunto: "Aluguel", mensagem: "", whats: false });
+  const [form, setForm] = useState({ nome: "", email: "", telefone: "", empresa: "", ramo: "", assunto: "Aluguel", mensagem: "" });
   const [sent, setSent] = useState(false);
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
     if (!form.nome.trim() || !form.email.trim() || !form.telefone.trim()) return;
-    if (form.whats) {
-      const msg = `Olá DJ Rent! Sou ${form.nome} (${form.empresa || "sem empresa"}). Assunto: ${form.assunto}. ${form.mensagem}`;
-      window.open(whatsappUrl(msg), "_blank");
-    }
+    const parts = [
+      `Olá DJ Rent! Gostaria de entrar em contato.`,
+      `Nome: ${form.nome}`,
+      `Email: ${form.email}`,
+      `Telefone: ${form.telefone}`,
+      form.empresa ? `Empresa: ${form.empresa}` : null,
+      form.ramo ? `Ramo de atuação: ${form.ramo}` : null,
+      `Assunto: ${form.assunto}`,
+      form.mensagem ? `Mensagem: ${form.mensagem}` : null,
+    ].filter(Boolean).join("\n");
+    window.open(whatsappUrl(parts), "_blank");
     setSent(true);
   }
 
@@ -378,15 +385,11 @@ function Contact() {
                   className="mt-1 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm focus:border-[var(--brand-blue)] focus:outline-none"
                 />
               </div>
-              <label className="flex items-center gap-2 text-sm text-[var(--brand-graphite)]">
-                <input type="checkbox" checked={form.whats} onChange={(e) => setForm({ ...form, whats: e.target.checked })} className="h-4 w-4 accent-[var(--brand-blue)]" />
-                Desejo ser contatado via WhatsApp
-              </label>
               <button
                 type="submit"
-                className="w-full rounded-full bg-[var(--brand-blue)] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-[var(--shadow-cta)] transition-colors hover:bg-[var(--brand-blue-dark)]"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-blue)] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-[var(--shadow-cta)] transition-colors hover:bg-[var(--brand-blue-dark)]"
               >
-                Enviar
+                <MessageCircle className="h-4 w-4" /> Enviar pelo WhatsApp
               </button>
             </form>
           )}
