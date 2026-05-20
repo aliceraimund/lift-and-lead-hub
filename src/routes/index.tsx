@@ -348,10 +348,10 @@ function Contact() {
           <p className="mt-3 text-[var(--brand-steel)]">Preencha o formulário ou fale conosco diretamente pelos canais ao lado.</p>
 
           {sent ? (
-            <div className="mt-8 rounded-2xl border border-[var(--brand-blue)]/30 bg-[var(--brand-blue)]/5 p-8 text-center">
-              <CheckCircle2 className="mx-auto h-12 w-12 text-[var(--brand-blue)]" />
-              <h3 className="mt-4 text-xl font-bold">Mensagem enviada!</h3>
-              <p className="mt-2 text-[var(--brand-steel)]">Em breve nossa equipe entrará em contato.</p>
+            <div className="mt-8 rounded-2xl border border-green-200 bg-green-50 p-8 text-center">
+              <CheckCircle2 className="mx-auto h-12 w-12 text-green-600" />
+              <h3 className="mt-4 text-xl font-bold">Mensagem enviada pelo WhatsApp!</h3>
+              <p className="mt-2 text-[var(--brand-steel)]">Aguarde nosso retorno em breve.</p>
             </div>
           ) : (
             <form onSubmit={submit} className="mt-8 space-y-4">
@@ -386,7 +386,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-blue)] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-[var(--shadow-cta)] transition-colors hover:bg-[var(--brand-blue-dark)]"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-[var(--shadow-cta)] transition-colors hover:bg-[#1ebe5d]"
               >
                 <MessageCircle className="h-4 w-4" /> Enviar pelo WhatsApp
               </button>
