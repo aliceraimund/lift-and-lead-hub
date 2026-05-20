@@ -340,7 +340,6 @@ function Contact() {
 
   return (
     <section id="contato" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-      <LogoSymbol className="mx-auto mb-10 h-20 w-auto md:h-24" />
       <div className="grid gap-12 md:grid-cols-2">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-blue)]">Contato</p>
