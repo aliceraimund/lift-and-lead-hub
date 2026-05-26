@@ -59,9 +59,9 @@ function Hero() {
         alt="Empilhadeira Toyota em operação"
         width={1920}
         height={1280}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-[70%_center] md:object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80 md:bg-gradient-to-r md:from-black/95 md:via-black/80 md:to-black/40" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-28 md:px-8 md:py-40">
         <LogoSymbol className="h-32 w-auto md:h-44 self-start" />
         <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-white backdrop-blur">
