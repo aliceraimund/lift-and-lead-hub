@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://djrent.com.br/sitemap.xml
