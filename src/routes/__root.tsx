@@ -91,6 +91,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      {
+        rel: "icon",
+        href: "/favicon.ico",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -99,11 +103,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "DJ Rent",
+  description: "Locação, compra e venda de empilhadeiras elétricas e à combustão em São Paulo.",
+  url: "https://djrent.com.br",
+  telephone: "+5511976637745",
+  email: "contato@djrent.com.br",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Alameda Terracota, 215, Torre Union, Sala 802",
+    addressLocality: "São Caetano do Sul",
+    addressRegion: "SP",
+    postalCode: "09531-190",
+    addressCountry: "BR",
+  },
+  areaServed: {
+    "@type": "State",
+    name: "São Paulo",
+  },
+};
+
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
       </head>
       <body>
         {children}
