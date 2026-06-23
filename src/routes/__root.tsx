@@ -75,6 +75,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "DJ Rent: Aluguel e Venda de Empilhadeiras" },
       { name: "description", content: "Aluguel e venda de empilhadeiras elétricas e à combustão em São Paulo." },
       { name: "author", content: "DJ Rent" },
+      { name: "google-site-verification", content: "EWb9Zi5Wp-zsgMD2VeBkql1vh41_KZ27uQsUrkts3mE" },
       { property: "og:title", content: "DJ Rent: Aluguel e Venda de Empilhadeiras" },
       { property: "og:description", content: "Aluguel e venda de empilhadeiras elétricas e à combustão em São Paulo." },
       { property: "og:type", content: "website" },
