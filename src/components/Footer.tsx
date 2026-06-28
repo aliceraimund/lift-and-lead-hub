@@ -41,9 +41,17 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-white/50 md:px-8">
-          © 2025 DJ Rent. Todos os direitos reservados.
-        </p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 px-4 py-5 text-center md:flex-row md:justify-between md:px-8">
+          <p className="text-xs text-white/50">© 2025 DJ Rent. Todos os direitos reservados.</p>
+          <a
+            href="https://djrent-admin.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-white/40 hover:text-white/70"
+          >
+            Área Administrativa
+          </a>
+        </div>
       </div>
     </footer>
   );
