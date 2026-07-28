@@ -28,6 +28,14 @@ export function Header() {
             Sobre Nós
           </Link>
           <a
+            href="https://djrent-admin.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-muted-foreground hover:text-[var(--brand-blue)]"
+          >
+            Área Administrativa
+          </a>
+          <a
             href={whatsappUrl("Olá DJ Rent! Gostaria de solicitar um orçamento")}
             target="_blank"
             rel="noopener noreferrer"
@@ -61,6 +69,15 @@ export function Header() {
             <Link to="/sobre" onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-sm font-medium">
               Sobre Nós
             </Link>
+            <a
+              href="https://djrent-admin.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground"
+            >
+              Área Administrativa
+            </a>
             <a
               href={whatsappUrl("Olá DJ Rent! Gostaria de solicitar um orçamento")}
               target="_blank"
